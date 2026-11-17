@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spf-lookups"
+version = "1.0.0"
+description = "Count the DNS lookups of an SPF record including all nested includes (RFC 7208 limit of 10)."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+dependencies = ["dnspython>=2.0"]
+keywords = ["spf", "dmarc", "email", "dns", "rfc7208", "email-security"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Communications :: Email",
+  "Topic :: System :: Networking",
+  "Environment :: Console",
+]
+
+[project.urls]
+Homepage = "https://github.com/inboxguard-ch/spf-lookups"
+"Web version" = "https://www.igs.ch/?p=tool&t=spf"
+
+[project.scripts]
+spf-lookups = "spf_lookups.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
