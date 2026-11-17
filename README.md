@@ -30,7 +30,7 @@ Result: OK
 pip install git+https://github.com/inboxguard-ch/spf-lookups
 ```
 
-Requires Python 3.8+ and [dnspython](https://www.dnspython.org/).
+Requires Python 3.9+ and [dnspython](https://www.dnspython.org/).
 
 ## Usage
 
