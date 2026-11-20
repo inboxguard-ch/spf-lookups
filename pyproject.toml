@@ -4,10 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "spf-lookups"
-version = "1.0.0"
+version = "1.0.1"
 description = "Count the DNS lookups of an SPF record including all nested includes (RFC 7208 limit of 10)."
 readme = "README.md"
 license = {text = "MIT"}
+authors = [{name = "Inbox Guard Switzerland", email = "media@igs.ch"}]
 requires-python = ">=3.9"
 dependencies = ["dnspython>=2.0"]
 keywords = ["spf", "dmarc", "email", "dns", "rfc7208", "email-security"]
