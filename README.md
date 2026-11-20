@@ -27,7 +27,7 @@ Result: OK
 ## Install
 
 ```
-pip install git+https://github.com/inboxguard-ch/spf-lookups
+pip install spf-lookups
 ```
 
 Requires Python 3.9+ and [dnspython](https://www.dnspython.org/).
